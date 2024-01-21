@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World!</title>
+    <style>
+        input, select, textarea {
+            margin-bottom: 14px;
+            width: 50%;
+            padding: 8px;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -15,7 +22,10 @@
             <label for="nazwisko">Nazwisko:</label><br>
             <input type="text" name="nazwisko" id="nazwisko" placeholder="Kowalski">
         </div>
-
+        <label for="email">Adres e-mail</label><br>
+        <input type="email" name="email" id="email" placeholder="jan.kowalski@poczta.pl"><br>
+        <label for="password">Haslo</label>
+        <input type="password" id="password" name="password">
         <label for="data">Data urodzenia</label><br>
         <input type="datetime-local" name="data" id="data"><br>
         <label for="sex">Plec</label><br>
@@ -30,7 +40,7 @@
         <br>
         <input type="checkbox" name="jeden" id="jeden"><label for="jeden">Zgadzam się na zachowywanie tych danych na serwerze</label><br>
         <input type="checkbox" name="jeden" id="dwa"><label for="dwa">Chce otrzymywac dodatkowe wiadomosci</label><br>
-        
+        <button>Zarejestruj!</button>
     </form>
 </body>
 </html>
